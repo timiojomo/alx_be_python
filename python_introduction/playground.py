@@ -49,3 +49,17 @@
 #     # Inner loop prints asterisks for each row
 #     print("*", end="")
 #   print()  # Move to a new line after each row of asterisks
+
+
+weight = float(input("Enter your weight: "))
+unit = input("(K) for Kilograms and (L) for Pounds: ").upper()
+if unit == "K":
+    converted_weight = round((weight * 2.205), 2)
+    print(f"Your weight is {converted_weight} in pounds")
+elif unit == "L":
+    converted_weight = round((weight / 2.205), 2)
+    print(f"Your weight is {converted_weight} in kilograms")
+else:
+    print("Enter correct unit")
+    
+
