@@ -51,15 +51,57 @@
 #   print()  # Move to a new line after each row of asterisks
 
 
-weight = float(input("Enter your weight: "))
-unit = input("(K) for Kilograms and (L) for Pounds: ").upper()
-if unit == "K":
-    converted_weight = round((weight * 2.205), 2)
-    print(f"Your weight is {converted_weight} in pounds")
-elif unit == "L":
-    converted_weight = round((weight / 2.205), 2)
-    print(f"Your weight is {converted_weight} in kilograms")
-else:
-    print("Enter correct unit")
+# weight = float(input("Enter your weight: "))
+# unit = input("(K) for Kilograms and (L) for Pounds: ").upper()
+# if unit == "K":
+#     converted_weight = round((weight * 2.205), 2)
+#     print(f"Your weight is {converted_weight} in pounds")
+# elif unit == "L":
+#     converted_weight = round((weight / 2.205), 2)
+#     print(f"Your weight is {converted_weight} in kilograms")
+# else:
+#     print("Enter correct unit")
     
+# def greet(name = "World"):
+#     print(f"Hello, {name}")
 
+# greet("Timi")
+# greet()
+
+# add = lambda x,y: x+y
+# result = add(5,3)
+# print(result)
+
+# def area(length, breadth):
+#     return length * breadth
+
+# print(area(20, 5))
+
+# def numberCheck(number):
+#     if number % 2 == 0:
+#         print(f"{number} is an even number")
+#     elif number % 2 == 1:
+#         print(f"{number} is an odd number")
+#     else:
+#         print("Enter an integer")
+
+# numberCheck(6)
+# numberCheck(5)
+# numberCheck(4.2)
+
+# fruits = ["orange", "mango", "pineapple", "apple", "watermelon"]
+# for i in fruits:
+#     print(i)
+
+
+
+# fav_book = {"Title":"Rich Dad Poor Dad", "Author":"Robert Kiyosaki", "Genre":"Finance"}
+# print(fav_book["Genre"])
+
+# from Calculator import multiply as mult
+
+# mult(5,2)
+
+# import requests
+
+# requests.get()
