@@ -16,3 +16,5 @@ match unit:
         convert_to_fahrenheit(temperature)
     case "F":
         convert_to_celsius(temperature)
+    case default:
+        print("Invalid temperature. Please enter a numeric value.")
