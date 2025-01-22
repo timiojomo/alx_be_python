@@ -1,4 +1,6 @@
-def safe_divide(numerator: float, denominator: float):
+def safe_divide(numerator, denominator):
+    numerator = float(numerator)
+    denominator = float(denominator)
     try:
         numerator / denominator
         if denominator == 0:
