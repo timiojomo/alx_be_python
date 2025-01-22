@@ -105,3 +105,72 @@
 # import requests
 
 # requests.get()
+
+
+#Classes and Objects
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def display_info(self):
+#         return f"{self.name} is {self.age} years old"
+    
+# student1 = Student("Timi", 28)
+# student2 = Student("Charles", 27)
+
+# print(student1.display_info())
+# print(student2.display_info())
+
+
+# class Product:
+#     def __init__(self, name, price, quantity):
+#         self.name = name
+#         self.price = price
+#         self.quantity = quantity
+
+#     def total_value(self):
+#         total_value = self.price * self.quantity
+#         return f"{total_value} dollars"
+    
+# product1 = Product("Nintendo Switch", 200, 20)
+
+# print(product1.total_value())
+# print(product1.name)
+
+
+
+# try:
+#     f = open('calculators.py')
+# except FileNotFoundError:
+#     print("File was not found")
+
+# def divide(x, y):
+#     if y == 0:
+#         raise ZeroDivisionError("Cannot divide by zero")
+#     return x / y
+
+# print(divide(4, 0))
+
+class ValueTooHighError(Exception):
+
+    def __init__(self, number):
+        self.number = number
+
+    def __str__(self):
+        return f"{self.number} is too high, enter a lower figure"
+
+
+def guess_number(number):
+    try:
+        if number > 100:
+            raise ValueTooHighError
+        else:
+            if number % 2 == 0:
+                print(f"{number} is an even number")
+            elif number % 2 == 1:
+                print(f"{number} is an odd number")
+    except ValueTooHighError as e:
+        print(e)
+
+guess_number(102)
