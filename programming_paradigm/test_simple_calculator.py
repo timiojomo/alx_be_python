@@ -25,11 +25,13 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(-1, 1), -1)
         self.assertEqual(self.calc.divide(-1, -1), 1)
 
+        with self.assertRaises(ZeroDivisionError):
+            self.calc.divide(10, 0)
+
     def test_multiplication(self):
         """Test the addition method."""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-1, 1), -1)
         self.assertEqual(self.calc.multiply(-1, -1), 1)
 
-        with self.assertRaises(ZeroDivisionError):
-            self.calc(10, 0)
+        
