@@ -30,3 +30,6 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-1, 1), -1)
         self.assertEqual(self.calc.multiply(-1, -1), 1)
+
+        with self.assertRaises(ZeroDivisionError):
+            self.calc(10, 0)
